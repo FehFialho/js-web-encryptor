@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <title>Encripto e Descripto de Texto | Alura Challenge</title>
+</head>
+<body>
+    <header>
+        
+    </header>
+   <main>  
+        <section class="type-area">
+            <div class="type-area__top"><img class="type-area__img" src="./assets/aluralogo.svg" alt="Logo da Alura"></div>
+            <input id="type-area__input" type="text" placeholder="Digite seu texto aqui">
+            <div>
+                <p class="type-area__warning">Apenas letras minúsculas e sem acento.</p>
+                <button class="dark-button" id="encrypt-button">Criptografar</button>
+                <button class="light-button" id="decrypt-button">Descriptografar</button>
+            </div>
+        </section>  
+        <section class="result">
+            <img class="result__img" src="./assets/search.svg" alt="">
+            <h2 id="result-title">Nenhuma mensagem encontrada!</h2>
+            <p id="result-text">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <button id="copy-button" class="dark-button">Copiar</button>
+        </section>
+    </main>
+    <footer class="default-footer">
+        <p>Desenvolvido por Fernanda Klechowicz Fialho</p>
+        <div>
+            <a href="https://www.linkedin.com/in/fernanda-klechowicz-fialho/"><img class="default-footer__img" src="./assets/linkedin.jpg" alt=""></a>
+            <a href="https://github.com/FehFialho"><img class="default-footer__img" src="./assets/linkedin.jpg" alt=""></a>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

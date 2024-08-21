@@ -1,0 +1,129 @@
+:root {
+    --main-color: #dfdfdf;
+    --sec-color: #0A3871;
+    --ter-color: #495057;
+
+    --sec-font: 'Krona One', sans-serif;
+    --main-font: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #c6c7c9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+footer {
+    padding: 0.6rem;
+    text-align: center;
+    margin-top: auto;
+    background-color: var(--sec-color); 
+    color: var(--main-color);
+}
+
+.type-area {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    background-color: rgb(228, 228, 228);
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 33rem; 
+    margin: 0.5rem;
+}
+
+.type-area__top{
+    display: flex;
+    justify-content: flex-start; 
+    width: 100%; 
+    margin-bottom: 1rem;
+}
+
+.type-area__img{
+    width: 5rem;
+    margin-top: 1rem;
+}
+
+.type-area__warning {
+    color: var(--ter-color);
+    margin: 0.5rem; 
+}
+
+#type-area__input {
+    color: var(--sec-color);
+    width: 100%;
+    height: 25rem;
+    padding: 1rem 3rem; 
+    background-color: transparent;
+    border: 2px solid var(--sec-color); 
+    border-radius: 5px; 
+}
+
+.dark-button {
+    border-radius: 0.7rem;
+    background-color: var(--sec-color);
+    padding: 0.7rem 3.5rem;
+    color: var(--main-color);
+    border: 1px solid var(--sec-color);
+    margin: 0.5rem; 
+}
+
+.light-button {
+    border-radius: 0.7rem;
+    background-color: var(--main-color);
+    padding: 0.7rem 3.5rem;
+    color: var(--sec-color);
+    border: 1px solid var(--sec-color);
+    margin: 0.5rem; 
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    padding: 2%;
+    width: 20rem;
+    background-color: rgb(247, 247, 247);
+    height: 33rem;
+    font-style: var(--main-font);
+    color: var(--ter-color);
+}
+.result__img {
+    width: 70%;
+}
+
+.default-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; 
+    background-color: var(--sec-color); 
+    color: var(--main-color);
+    padding: 1rem; 
+}
+
+.default-footer__img {
+    width: 3rem; 
+    height: 3rem; 
+    margin: 0.5rem; 
+}
