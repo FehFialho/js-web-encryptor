@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const textInput = document.getElementById('type-area__input');
+    const textInput = document.getElementById('type-area__text');
     const encryptButton = document.getElementById('encrypt-button');
     const decryptButton = document.getElementById('decrypt-button');
     const resultTitle = document.getElementById('result-title');
@@ -28,7 +28,7 @@ const decryptionMap = {
 };
 
 function encryptText(textInput, resultTitle, resultText) {
-    const inputText = textInput.value;
+    const inputText = textInput.value.toLowerCase();
     const encryptedText = inputText.replace(/[eiaou]/g, match => encryptionRules[match]);
 
     console.log("Texto criptografado:", encryptedText);

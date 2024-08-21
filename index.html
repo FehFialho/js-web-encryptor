@@ -12,17 +12,22 @@
     </header>
    <main>  
         <section class="type-area">
-            <div class="type-area__top"><img class="type-area__img" src="./assets/aluralogo.svg" alt="Logo da Alura"></div>
-            <input id="type-area__input" type="text" placeholder="Digite seu texto aqui">
-            <div>
-                <p class="type-area__warning">Apenas letras minúsculas e sem acento.</p>
+            <div class="type-area__top">
+                <img class="type-area__img" src="./assets/aluralogo.png" alt="Logo da Alura">
+            </div>
+            <textarea name="" id="type-area__text" placeholder="Digite seu texto aqui"></textarea>
+            <p class="type-area__warning">Caracteres especiais ou com acento não serão encriptografados!</p>
+            <div>    
                 <button class="dark-button" id="encrypt-button">Criptografar</button>
                 <button class="light-button" id="decrypt-button">Descriptografar</button>
             </div>
         </section>  
         <section class="result">
-            <img class="result__img" src="./assets/search.svg" alt="">
-            <h2 id="result-title">Nenhuma mensagem encontrada!</h2>
+            <figure>
+                <img class="result__img" src="./assets/searchimg.png" alt="">
+            <figcaption><a class="result__img__caption" href="https://br.freepik.com/vetores-gratis/ilustracao-de-pesquisa-de-palavra-chave_18611298.htm#fromView=image_search_similar&page=1&position=32&uuid=f2653e3b-e4ba-420d-b5cd-382f184da94a">Designed by Freepik</a></figcaption>
+            </figure>           
+            <h3 id="result-title">Nenhuma mensagem encontrada!</h3>
             <p id="result-text">Digite um texto que você deseja criptografar ou descriptografar.</p>
             <button id="copy-button" class="dark-button">Copiar</button>
         </section>
@@ -30,8 +35,8 @@
     <footer class="default-footer">
         <p>Desenvolvido por Fernanda Klechowicz Fialho</p>
         <div>
-            <a href="https://www.linkedin.com/in/fernanda-klechowicz-fialho/"><img class="default-footer__img" src="./assets/linkedin.jpg" alt=""></a>
-            <a href="https://github.com/FehFialho"><img class="default-footer__img" src="./assets/linkedin.jpg" alt=""></a>
+            <a href="https://www.linkedin.com/in/fernanda-klechowicz-fialho/"><img class="default-footer__img" src="./assets/linkedin.png" alt="Logo do LinkedIn"></a>
+            <a href="https://github.com/FehFialho"><img class="default-footer__img" src="./assets/github.png" alt="Logo do GitHub"></a>
         </div>
     </footer>
     <script src="./script.js"></script>
