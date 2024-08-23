@@ -94,6 +94,13 @@ footer {
     font-style: italic;
 }
 
+.type-area__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 .dark-button {
     border: 2px solid var(--ter-color);
     background-color: var(--sec-color);
@@ -172,6 +179,10 @@ footer {
     margin-top: 0.2rem;
 }
 
+.footer__links{
+    width: 100%;
+}
+
 .footer__img {
     width: 2rem; 
     height: 2rem; 
@@ -190,19 +201,26 @@ main {
     height: auto;
 }
 
+footer{
+    height: 19vh;
+    padding: 0.6rem;
+}
+
 .type-area {
-    height: 40vh;
+    height: 45vh;
 }
 
 .type-area__warning {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin: 0.5rem; 
 }
 
 .dark-button,
 .light-button {
-    font-size: 1.3rem;
-    margin: 0.7rem;
+    font-size: 1.5rem;
+    width: 50%;
+    height: 4.5rem;
+    margin: 0.3rem;
 }
 
 .result{
@@ -211,11 +229,22 @@ main {
 }
 
 #result-title{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 #result-text{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+}
+
+.footer__p{
+    font-size: 1.4rem;
+}
+
+.footer__img {
+    width: 10%; 
+    height: auto; 
+    margin: 0.2rem 0.8rem; 
+    margin-top: 1rem;
 }
 
 }
