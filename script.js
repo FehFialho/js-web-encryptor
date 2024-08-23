@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     encryptButton.addEventListener("click", () => encryptText(textInput, resultTitle, resultText));
     decryptButton.addEventListener("click", () => decryptText(textInput, resultTitle, resultText));
-    copyButton.addEventListener("click", () => copyText(textInput));
+    copyButton.addEventListener("click", () => copyText(resultText, copyButton));
 });
 
 const encryptionRules = {
@@ -27,26 +27,49 @@ const decryptionMap = {
     'ufat': 'u'
 };
 
-function encryptText(textInput, resultTitle, resultText) {
-    const inputText = textInput.value.toLowerCase();
-    const encryptedText = inputText.replace(/[eiaou]/g, match => encryptionRules[match]);
+document.getElementById('type-area__text').addEventListener('input', function (event) {
+    const textarea = event.target;
+    const regex = /[^a-zA-Z0-9\s]/g; 
+    textarea.value = textarea.value.replace(regex, '');
+});
 
-    console.log("Texto criptografado:", encryptedText);
 
-    resultTitle.textContent = "Texto Criptografado:";
-    resultText.textContent = encryptedText;
+function encryptText(textInput, resultTitle, resultText, copyButton) {
+    if (textInput.value === "") {
+        resultTitle.textContent = "Ops!";
+        resultText.textContent = "Nenhum texto foi inserido. Digite e tente novamente!";
+    } else {
+        const inputText = textInput.value.toLowerCase();
+        const encryptedText = inputText.replace(/[eiaou]/g, match => encryptionRules[match]);
+        resultTitle.textContent = "Texto Criptografado:";
+        resultText.textContent = encryptedText;
+    }
 }
 
-function decryptText(textInput, resultTitle, resultText) {
-    const inputText = textInput.value;
-    const decryptedText = inputText.replace(/enter|imes|ai|ober|ufat/g, match => decryptionMap[match]);
+function decryptText(textInput, resultTitle, resultText, copyButton) {
+    if (textInput.value === "") {
+        resultTitle.textContent = "Ops!";
+        resultText.textContent = "Nenhum texto foi inserido. Digite e tente novamente!";
+    } else {
+        const inputText = textInput.value;
+        const decryptedText = inputText.replace(/enter|imes|ai|ober|ufat/g, match => decryptionMap[match]);
 
-    console.log("Texto descriptografado:", decryptedText);
+        console.log("Texto descriptografado:", decryptedText);
 
-    resultTitle.textContent = "Texto Descriptografado:";
-    resultText.textContent = decryptedText;
+        resultTitle.textContent = "Texto Descriptografado:";
+        resultText.textContent = decryptedText;
+    }
 }
 
-function copyText(textInput){
-    console.log("Testando Botão");
+function copyText(resultText, copyButton) {
+    const textToCopy = resultText.textContent; 
+
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        copyButton.textContent = "Texto Copiado!";
+        setTimeout(() => {
+            copyButton.textContent = "Copiar"; // Reset button text after a delay
+        }, 1200);
+    }).catch((err) => {
+        console.error("Erro ao Copiar: ", err);
+    });
 }
