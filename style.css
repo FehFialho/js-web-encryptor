@@ -39,7 +39,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 15vh; 
+    height: 18vh; 
     background-color: var(--sec-color); 
     color: var(--main-color);
 }
@@ -53,7 +53,7 @@ footer {
     align-items: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 80vh;
+    height: 82vh;
     margin: 0.3rem;
 }
 
@@ -119,7 +119,7 @@ footer {
     font-weight: 600;
     font-size: 1rem;
     border-radius: 0.7rem;
-    width: 13rem;
+    width: 50%;
     height: 2.5rem;
     margin: 0.7rem;
     cursor: pointer;
@@ -138,7 +138,7 @@ footer {
     border: none;
     padding: 1rem;
     width: 30%;
-    height: 80vh; 
+    height: 82vh; 
     background-color: var(--light-color);
     font-style: var(--main-font);
     color: var(--ter-color);
@@ -203,8 +203,16 @@ main {
 }
 
 footer{
-    height: 15vh;
+    height: auto;
+    min-height: 22vh;
     padding: 1rem;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.type-area {
+    height: 46vh;
+    padding: 2.2rem;
 }
 
 .type-area__img{
@@ -212,13 +220,9 @@ footer{
     margin: 1rem;
 }
 
-.type-area {
-    height: 44gvh;
-    padding: 2.2rem;
-}
-
 #type-area__text{
     height: 90%;
+    width: 80%;
     font-size: 4rem;
 }
 
@@ -235,8 +239,8 @@ footer{
 .light-button {
     border-radius: 20px;
     font-size: 3rem;
-    width: 90%;
-    height: 7rem;
+    width: 95%;
+    height: 7.4rem;
     margin: 0.3rem;
 }
 
@@ -248,10 +252,11 @@ footer{
 
 .result__img{
     width: 20rem;
+    margin-top: 2rem;
 }
 
 .result__img__caption{
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 #result-title{
@@ -260,19 +265,21 @@ footer{
 
 #result-text{
     font-size: 2.2rem;
-    margin: 1rem;
+    margin: 2.4rem;
 }
 
 .footer__p{
-    font-size: 2.8rem;
-    margin-top: 1.2rem;
+    font-size: 2.2rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1rem;
 }
 
 .footer__img {
-    width: 9%; 
+    width: 30%; 
     height: auto; 
-    margin: 0rem 0.8rem; 
-    margin-top: 1.3rem;
+    border: 2px var(--qua-color) solid;
+    border-radius: 10px;
+    padding: 1rem 4.5rem;
+    background-color: var(--qua-color);
 }
-
 }
