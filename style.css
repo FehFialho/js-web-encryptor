@@ -211,24 +211,24 @@ footer{
 }
 
 .type-area {
-    height: 46vh;
+    height: 48vh;
     padding: 2.2rem;
 }
 
 .type-area__img{
     width: 6.4rem;
-    margin: 1rem;
+    margin-bottom: 3rem;
 }
 
 #type-area__text{
-    height: 90%;
+    height: 95%;
     width: 80%;
     font-size: 4rem;
 }
 
 .type-area__warning {
     font-size: 2.8rem;
-    margin: 1rem; 
+    margin: 2rem; 
 }
 
 .type-area__buttons{
@@ -269,17 +269,17 @@ footer{
 }
 
 .footer__p{
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     margin-top: 1.4rem;
     margin-bottom: 1rem;
 }
 
 .footer__img {
-    width: 30%; 
+    width: 38%; 
     height: auto; 
     border: 2px var(--qua-color) solid;
     border-radius: 10px;
-    padding: 1rem 4.5rem;
+    padding: 0.5rem 5.4rem;
     background-color: var(--qua-color);
 }
 }
