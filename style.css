@@ -199,15 +199,20 @@ body{
 main {
     flex-direction: column;
     height: auto;
-}
-
-footer{
-    height: 19vh;
     padding: 0.6rem;
 }
 
+footer{
+    height: 22vh;
+    padding: 1rem;
+}
+
 .type-area {
-    height: 45vh;
+    height: 44vh;
+}
+
+#type-area__text{
+    height: 90%;
 }
 
 .type-area__warning {
@@ -215,17 +220,25 @@ footer{
     margin: 0.5rem; 
 }
 
+.type-area__buttons{
+    flex-direction: column;
+}
+
 .dark-button,
 .light-button {
-    font-size: 1.5rem;
-    width: 50%;
-    height: 4.5rem;
+    font-size: 1.7rem;
+    width: 90%;
+    height: 4.9rem;
     margin: 0.3rem;
 }
 
 .result{
     width: auto;
     height: auto;
+}
+
+.result__img__caption{
+    font-size: 0.8rem;
 }
 
 #result-title{
@@ -238,12 +251,13 @@ footer{
 
 .footer__p{
     font-size: 1.4rem;
+    margin-top: 0.8rem;
 }
 
 .footer__img {
-    width: 10%; 
+    width: 9%; 
     height: auto; 
-    margin: 0.2rem 0.8rem; 
+    margin: 0rem 0.8rem; 
     margin-top: 1rem;
 }
 
